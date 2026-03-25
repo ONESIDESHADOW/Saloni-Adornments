@@ -20,14 +20,14 @@ import ChangePassword from "./pages/ChangePassword";
 import Profile from "./pages/Profile";
 import MyOrders from "./pages/MyOrders";
 import Checkout from "./pages/Checkout";
-import AboutUs from "./pages/Aboutus";
+import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import OrderDetails from "./pages/OrderDetails";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminProducts from "./pages/admin/AdminProducts";
 import AdminOrders from "./pages/admin/AdminOrders";
 import AdminUsers from "./pages/admin/AdminUsers";
-import AdminOrderDetails from "./pages/admin/adminOrderDetails";
+import AdminOrderDetails from "./pages/admin/AdminOrderDetails";
 
 // Protected Route Component
 const ProtectedRoute = ({ children, adminOnly = false }) => {
