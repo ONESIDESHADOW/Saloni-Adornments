@@ -9,7 +9,6 @@ const Checkout = () => {
   const { cart, clearCart, getCartTotal, tax, total } = useContext(CartContext);
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log("USER:", user);
   const [formData, setFormData] = useState({
     address: "",
     city: "",

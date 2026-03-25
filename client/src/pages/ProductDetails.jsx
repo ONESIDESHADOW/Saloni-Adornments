@@ -3,6 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { CartContext } from "../context/CartContext";
 import { Heart, Eye, Share2, Star } from "lucide-react";
+import { getImageUrl } from "../utils/config";
+
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -37,7 +39,8 @@ const ProductDetails = () => {
             {/* Image */}
             <div className="bg-gray-100 rounded-xl overflow-hidden">
               <img
-                src={product.images[0]}
+                src={getImageUrl(product.images[0])}
+                // src={`${product.images[0]}`}
                 // src={`http://localhost:5000${product.images[0]}`}
                 alt={product.name}
                 className="w-full h-full object-cover"
