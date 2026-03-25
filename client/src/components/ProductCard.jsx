@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
       <div className="relative h-72 overflow-hidden bg-gray-100">
         <Link to={`/product/${product._id}`}>
           <img
-            src={getImageUrl(product.images[0])}
+            src={getImageUrl(product.images?.[0])}
             // src={`http://localhost:5000${product.images[0]}`}
             alt={product.name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

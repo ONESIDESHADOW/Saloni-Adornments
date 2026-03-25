@@ -4,6 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { CreditCard, Truck, Lock } from "lucide-react";
+import { getImageUrl } from "../utils/config";
 
 const Checkout = () => {
   const { cart, clearCart, getCartTotal, tax, total } = useContext(CartContext);
@@ -206,7 +207,8 @@ const Checkout = () => {
                 {cart.map((item) => (
                   <div key={item._id} className="flex gap-4">
                     <img
-                      src={item.images[0] || "https://via.placeholder.com/60"}
+                    src={getImageUrl(item.images?.[0])}
+                      // src={item.images[0] || "https://via.placeholder.com/60"}
                       alt={item.name}
                       className="w-16 h-16 object-cover rounded"
                     />

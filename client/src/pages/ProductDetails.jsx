@@ -39,7 +39,7 @@ const ProductDetails = () => {
             {/* Image */}
             <div className="bg-gray-100 rounded-xl overflow-hidden">
               <img
-                src={getImageUrl(product.images[0])}
+                src={getImageUrl(product.images?.[0])}
                 // src={`${product.images[0]}`}
                 // src={`http://localhost:5000${product.images[0]}`}
                 alt={product.name}

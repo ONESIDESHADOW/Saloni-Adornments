@@ -32,7 +32,7 @@ const Cart = () => {
               {cart.map((item) => (
                 <div key={item._id} className="border border-gray-200 rounded-lg p-4 flex gap-4 hover:shadow-md transition">
                   <img 
-                    src={item.images[0] || "https://via.placeholder.com/100"} 
+                    src={item.images?.[0] || "https://via.placeholder.com/100"} 
                     alt={item.name} 
                     className="w-24 h-24 object-cover rounded-lg"
                   />
